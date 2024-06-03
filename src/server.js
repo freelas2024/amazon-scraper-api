@@ -180,7 +180,7 @@ app.post('/scrape', async (req, res) => {
           product.description
         }\nDetalhes do produto: ${JSON.stringify(
           product.productDetails
-        )}\nImagens: ${product.images.join(', ')}\n-----------`
+        )}\nImagens: ${product.images.join(', ')}\n\n-----------\n`
       })
       .join('\n')
 
