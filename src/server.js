@@ -36,7 +36,7 @@ app.post('/scrape', async (req, res) => {
     return res.status(400).json({ error: 'URL is required' })
   }
 
-  process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
+  // process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
 
   const body = {
     source: 'amazon',
@@ -218,25 +218,25 @@ app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`)
 })
 
-// const testUrl =
-//   'https://www.amazon.com.br/s?k=capacetes&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss'
-// // 'https://www.amazon.com.br/dp/B0CHJ2C1YS/ref=twister_B0CLM4QWZK?_encoding=UTF8&th=1'
+const testUrl =
+  //   'https://www.amazon.com.br/s?k=capacetes&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss'
+  'https://www.amazon.com.br/dp/B0CHJ2C1YS/ref=twister_B0CLM4QWZK?_encoding=UTF8&th=1'
 // // 'https://www.amazon.com.br/Sapato-Social-Masculino-Casual-Amarrar/dp/B0BKGT6W4R/ref=sr_1_7?dib=eyJ2IjoiMSJ9.-2Gdj6V_4fmPI0aG3yzs2-66nZnC04IG8Lj8niBvQOv7dC1ZCjW8A21Z6oE-AWxfENva6cXtH79mviE23UZbb0c1C72PaFtyzM7uhCGpWVEE1mQ5fLwdvGTttZFWZJoT1NCqJPJ9vSJ1qDFEZmzUsaodjg3phFV1L4JsRK9A-0MpLgl6j9xdhZ4n2rYl3FK20Qc0Cwp3bJf_ZZX9SO8yJYRgczbEhLEvbdsxRV1BCooMdE6zABaIaR8wspqMW1MwcYfywW-xGeLMdf90O9gnXhiXs0J2yJVKlje2IXddESE.Ibe8xXNmnAMI5kuI8aGXM5Xya-Lo96I-YjIdhdxrEYU&dib_tag=se&keywords=sapato&qid=1717431690&sr=8-7&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9'
 
-// const testEndpoint = async () => {
-//   try {
-//     const response = await axios.post('http://localhost:3000/scrape', {
-//       url: testUrl
-//     })
+const testEndpoint = async () => {
+  try {
+    const response = await axios.post('http://localhost:3000/scrape', {
+      url: testUrl
+    })
 
-//     // console.log('Status:', response.status)
-//     // console.log('Data:', response.data)
-//   } catch (error) {
-//     console.error(
-//       'Error:',
-//       error.response ? error.response.data : error.message
-//     )
-//   }
-// }
+    console.log('Status:', response.status)
+    // console.log('Data:', response.data)
+  } catch (error) {
+    console.error(
+      'Error:',
+      error.response ? error.response.data : error.message
+    )
+  }
+}
 
-// testEndpoint()
+testEndpoint()
