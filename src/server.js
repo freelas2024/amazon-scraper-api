@@ -210,7 +210,7 @@ app.post('/scrape', async (req, res) => {
     await zip.finalize()
   } catch (error) {
     console.error('Error:', error)
-    res.status(500).json({ error: 'An error occurred' })
+    res.status(500).json({ error: 'An error occurred' + error })
   }
 })
 
