@@ -215,8 +215,8 @@ app.post('/scrape', async (req, res) => {
   }
 })
 
-app.get('/test', async (req, res) => {
-  res.send('Scraping concluído com sucesso!')
+app.get('/validation', async (req, res) => {
+  res.send('Validação: Desenvolvido por Henrique para Jean')
 })
 
 app.listen(port, () => {
