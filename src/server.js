@@ -206,6 +206,7 @@ app.post('/scrape', async (req, res) => {
         })
       }
     }
+    //
 
     await zip.finalize()
   } catch (error) {
