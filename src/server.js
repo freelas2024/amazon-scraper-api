@@ -63,7 +63,7 @@ app.post('/scrape', async (req, res) => {
     const data = response.data.results[0].content
     let products = []
 
-    console.log('PASSOU AQUI ==>', data.results.organic[0])
+    // console.log('PASSOU AQUI ==>', data.results.organic[0])
 
     if (data.page_type === 'Product') {
       products = [data]
@@ -92,7 +92,38 @@ app.post('/scrape', async (req, res) => {
     }
 
     const detailedProducts = []
+    // for (const product of products) {
+    //   const productDetailResponse = await axios.post(
+    //     'https://realtime.oxylabs.io/v1/queries',
+    //     {
+    //       source: 'amazon_product',
+    //       query: product.asin,
+    //       parse: true,
+    //       domain: 'com.br',
+    //       context: [{ key: 'autoselect_variant', value: true }]
+    //     },
+    //     {
+    //       headers: {
+    //         'Content-Type': 'application/json',
+    //         Authorization:
+    //           'Basic ' +
+    //           Buffer.from(`${username}:${password}`).toString('base64')
+    //       }
+    //     }
+    //   )
+
+    //   const productDetail = productDetailResponse.data.results[0].content
+    //   detailedProducts.push(productDetail)
+    // }
+
+    let count = 0 // Contador inicializado a zero
+    const maxReads = 2 // Limite máximo de leituras
+
     for (const product of products) {
+      // if (count >= maxReads) {
+      //   break
+      // }
+
       const productDetailResponse = await axios.post(
         'https://realtime.oxylabs.io/v1/queries',
         {
@@ -114,11 +145,11 @@ app.post('/scrape', async (req, res) => {
 
       const productDetail = productDetailResponse.data.results[0].content
       detailedProducts.push(productDetail)
+
+      // count++ // Incrementa o contador a cada iteração
     }
 
     const productDetails = detailedProducts.map((product) => {
-      // console.log(product.variation)
-
       const formattedVariations =
         formatProductVariations(product.variation) || 'Sem variações'
 
@@ -127,14 +158,17 @@ app.post('/scrape', async (req, res) => {
         title: product.title,
         variations: formattedVariations,
         price: product.price_upper,
-        shippedBy: product.featured_merchant
-          ? product.featured_merchant.name
-          : product.manufacturer,
+        shippedBy:
+          product.featured_merchant.name ||
+          product.manufacturer ||
+          'Não identificado',
         description: product.description || 'Produto sem descrição',
         productDetails: product.product_details || {},
         images: product.images || []
       }
     })
+
+    // console.log(detailedProducts.length)
 
     const txtContent = productDetails
       .map((product) => {
@@ -184,25 +218,25 @@ app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`)
 })
 
-const testUrl =
-  'https://www.amazon.com.br/s?k=capacetes&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss'
-// 'https://www.amazon.com.br/dp/B0CHJ2C1YS/ref=twister_B0CLM4QWZK?_encoding=UTF8&th=1'
-// 'https://www.amazon.com.br/Sapato-Social-Masculino-Casual-Amarrar/dp/B0BKGT6W4R/ref=sr_1_7?dib=eyJ2IjoiMSJ9.-2Gdj6V_4fmPI0aG3yzs2-66nZnC04IG8Lj8niBvQOv7dC1ZCjW8A21Z6oE-AWxfENva6cXtH79mviE23UZbb0c1C72PaFtyzM7uhCGpWVEE1mQ5fLwdvGTttZFWZJoT1NCqJPJ9vSJ1qDFEZmzUsaodjg3phFV1L4JsRK9A-0MpLgl6j9xdhZ4n2rYl3FK20Qc0Cwp3bJf_ZZX9SO8yJYRgczbEhLEvbdsxRV1BCooMdE6zABaIaR8wspqMW1MwcYfywW-xGeLMdf90O9gnXhiXs0J2yJVKlje2IXddESE.Ibe8xXNmnAMI5kuI8aGXM5Xya-Lo96I-YjIdhdxrEYU&dib_tag=se&keywords=sapato&qid=1717431690&sr=8-7&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9'
+// const testUrl =
+//   'https://www.amazon.com.br/s?k=capacetes&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss'
+// // 'https://www.amazon.com.br/dp/B0CHJ2C1YS/ref=twister_B0CLM4QWZK?_encoding=UTF8&th=1'
+// // 'https://www.amazon.com.br/Sapato-Social-Masculino-Casual-Amarrar/dp/B0BKGT6W4R/ref=sr_1_7?dib=eyJ2IjoiMSJ9.-2Gdj6V_4fmPI0aG3yzs2-66nZnC04IG8Lj8niBvQOv7dC1ZCjW8A21Z6oE-AWxfENva6cXtH79mviE23UZbb0c1C72PaFtyzM7uhCGpWVEE1mQ5fLwdvGTttZFWZJoT1NCqJPJ9vSJ1qDFEZmzUsaodjg3phFV1L4JsRK9A-0MpLgl6j9xdhZ4n2rYl3FK20Qc0Cwp3bJf_ZZX9SO8yJYRgczbEhLEvbdsxRV1BCooMdE6zABaIaR8wspqMW1MwcYfywW-xGeLMdf90O9gnXhiXs0J2yJVKlje2IXddESE.Ibe8xXNmnAMI5kuI8aGXM5Xya-Lo96I-YjIdhdxrEYU&dib_tag=se&keywords=sapato&qid=1717431690&sr=8-7&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9'
 
-const testEndpoint = async () => {
-  try {
-    const response = await axios.post('http://localhost:3000/scrape', {
-      url: testUrl
-    })
+// const testEndpoint = async () => {
+//   try {
+//     const response = await axios.post('http://localhost:3000/scrape', {
+//       url: testUrl
+//     })
 
-    // console.log('Status:', response.status)
-    // console.log('Data:', response.data)
-  } catch (error) {
-    console.error(
-      'Error:',
-      error.response ? error.response.data : error.message
-    )
-  }
-}
+//     // console.log('Status:', response.status)
+//     // console.log('Data:', response.data)
+//   } catch (error) {
+//     console.error(
+//       'Error:',
+//       error.response ? error.response.data : error.message
+//     )
+//   }
+// }
 
-testEndpoint()
+// testEndpoint()

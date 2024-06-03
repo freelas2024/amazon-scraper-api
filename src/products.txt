@@ -1,24 +1,22 @@
-ASIN: B0BKGXFZCD
-Título do anúncio: Sapato Masculino Social Oxford Casual Estiloso
-Variações: ASIN: B0BKGSGMTL, Dimensões: Cor: Tabaco, Tamanho: 38
-ASIN: B0BKGTMSN6, Dimensões: Cor: Preto, Tamanho: 38
-ASIN: B0BKGW7HW2, Dimensões: Cor: Preto, Tamanho: 44
-ASIN: B0BKGT6W4R, Dimensões: Cor: Preto, Tamanho: 41
-ASIN: B0BKGWQ6G6, Dimensões: Cor: Tabaco, Tamanho: 42
-ASIN: B0BKGWTBS4, Dimensões: Cor: Tabaco, Tamanho: 37
-ASIN: B0BKGV54P6, Dimensões: Cor: Preto, Tamanho: 43
-ASIN: B0BKGSLSLQ, Dimensões: Cor: Tabaco, Tamanho: 44
-ASIN: B0BKGV8CWX, Dimensões: Cor: Tabaco, Tamanho: 40
-ASIN: B0BKGSWH1R, Dimensões: Cor: Preto, Tamanho: 39
-ASIN: B0BKGV33H5, Dimensões: Cor: Tabaco, Tamanho: 43
-ASIN: B0BKGTSQ16, Dimensões: Cor: Preto, Tamanho: 42
-ASIN: B0BKGX2RWW, Dimensões: Cor: Tabaco, Tamanho: 39
-ASIN: B0BKGXFZCD, Dimensões: Cor: Preto, Tamanho: 37
-ASIN: B0BKGVMXWV, Dimensões: Cor: Tabaco, Tamanho: 41
-ASIN: B0BKGTQ9SS, Dimensões: Cor: Preto, Tamanho: 40
-Preço: R$ 139.9
-Enviado por : QueroShoes
-Descrição: Product sem descrição
-Detalhes do produto: {"asin":"B0BKGTSGGC","departamento":"masculino","dimensões_da_embalagem":"33 x 15 x 12 cm; 1 quilogramas"}
-Imagens: https://m.media-amazon.com/images/I/61iS5j4rZmL._AC_SL1000_.jpg, https://m.media-amazon.com/images/I/51OoUyTh62L._AC_SL1000_.jpg, https://m.media-amazon.com/images/I/61DVg30ki-L._AC_SL1000_.jpg, https://m.media-amazon.com/images/I/51IR8ljeMSL._AC_SL1000_.jpg, https://m.media-amazon.com/images/I/518YIAdO8XL._AC_SL1000_.jpg, https://m.media-amazon.com/images/I/51gZdKvAumL._AC_SL1200_.jpg, https://m.media-amazon.com/images/I/61pzhRvynwL._AC_SL1200_.jpg, https://m.media-amazon.com/images/I/51PaBtyBaoL._AC_SL1200_.jpg
+ASIN: B07FWLPHXM
+Título do anúncio: Moulded Earplug Speed
+Variações:
+ASIN: B07G7J3GTB, Dimensões: Cor: Transparente
+ASIN: B07FWLPHXM, Dimensões: Cor: Azul
+ASIN: B07FW1DXR3, Dimensões: Cor: Laranja
+Preço: R$ 39
+Enviado por : undefined
+Descrição: Obtenha extremo conforto e segurança durante a prática de atividades aquáticas com o Speedo moulded earplug, protetor moldado para melhor encaixe no ouvido. Com formato anatômico que minimiza a interferência na audição, bloqueia a entrada de água nos ouvidos. Reusável, lavável e higiênico. Extremo conforto e adaptabilidade. Acompanha caixa protetora para melhor conservação. Não deve ser usado para mergulho.
+Detalhes do produto: {"cor":"‎Azul","asin":"‎B07FWLPHXM","marca":"‎Speedo","estilo":"‎Dentro da orelha","tamanho":"‎Único","esportes":"‎Natação","material":"‎Silicone","fabricante":"‎Speedo","departamento":"‎UNISSEX","faixa_etária":"‎Todas As Idades","certificação":"‎Não aplicável","nome_do_modelo":"‎Moulded Earplug","número_de_itens":"‎1","número_de_peças":"‎2","componentes_inclusos":"‎1 Par de Protetor de Ouvido","dimensões_do_produto":"‎17 x 26 x 9 cm; 300 g","funciona_com_baterias":"‎Não","é_sensível_ao_calor":"‎Não","fonte_de_alimentação":"‎Não aplicável","avaliações_de_clientes":"4,3 4,3 de 5 estrelas 739 avaliações de clientes 4,3 de 5 estrelas","composição_do_material":"‎100% Silicone","ranking_dos_mais_vendidos":"Nº 89 em Esporte (Conheça o Top 100 na categoria Esporte) Nº 14 em Equipamento de Natação","referência_do_fabricante":"‎7891437233306","correspondência_de_tamanho":"‎Outro (especifique na descrição do produto)","disponível_para_compra_desde":"25 julho 2018"}
+Imagens: https://m.media-amazon.com/images/I/51UpfYfq6oL._AC_SL1500_.jpg, https://m.media-amazon.com/images/I/61owbhLyTfL._AC_SL1500_.jpg, https://m.media-amazon.com/images/I/61SfQr8+N-L._AC_SL1500_.jpg, https://m.media-amazon.com/images/I/81xVINZDTJL._AC_SL1500_.jpg
+-----------
+ASIN: B07G69PPJ1
+Título do anúncio: Speedo Soft Earplug, transparente
+Variações:
+Sem variações
+Preço: R$ 47.97
+Enviado por : undefined
+Descrição: Obtenha conforto e segurança durante a prática de atividades aquáticas com o soft earplug, protetores moldáveis para os ouvidos. Ultra macio e confortável, bloqueia a entrada de água nos ouvidos, sendo moldável e reusavel. Acompanha caixa protetora para melhor conservação. Não deve ser usado para mergulho.
+Detalhes do produto: {"cor":"‎Transparente","asin":"‎B07G69PPJ1","marca":"‎Speedo","estilo":"‎Uncorded","tamanho":"‎Único","esportes":"‎Natação","material":"‎Combinação","fabricante":"‎Speedo","departamento":"‎Adulto unissex","certificação":"‎Não aplicável","nome_do_modelo":"‎Soft Earplug","número_de_itens":"‎1","tipo_de_material":"‎100% Silicone","componentes_inclusos":"‎Soft Earplug","dimensões_do_produto":"‎18 x 10 x 3 cm; 300 g","funciona_com_baterias":"‎Não","fonte_de_alimentação":"‎Não aplicável","instruções_de_cuidado":"‎Lavagem manual","avaliações_de_clientes":"4,4 4,4 de 5 estrelas 398 avaliações de clientes 4,4 de 5 estrelas","ranking_dos_mais_vendidos":"Nº 362 em Esporte (Conheça o Top 100 na categoria Esporte) Nº 32 em Equipamento de Natação","referência_do_fabricante":"‎7891437229262","correspondência_de_tamanho":"‎Tamanho único","disponível_para_compra_desde":"12 agosto 2018"}
+Imagens: https://m.media-amazon.com/images/I/61u0GHFN-xL._AC_SL1500_.jpg, https://m.media-amazon.com/images/I/61iNiXtoJOL._AC_SL1500_.jpg, https://m.media-amazon.com/images/I/61AHp+awfqL._AC_SL1500_.jpg, https://m.media-amazon.com/images/I/81xVINZDTJL._AC_SL1500_.jpg
 -----------
