@@ -214,6 +214,10 @@ app.post('/scrape', async (req, res) => {
   }
 })
 
+app.post('/test', async (req, res) => {
+  res.send('Scraping concluído com sucesso!')
+})
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`)
 })
