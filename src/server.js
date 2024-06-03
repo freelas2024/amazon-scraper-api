@@ -184,7 +184,7 @@ app.post('/scrape', async (req, res) => {
       })
       .join('\n')
 
-    const txtFilePath = path.join(__dirname, 'products.txt')
+    const txtFilePath = path.join('/tmp', 'products.txt')
     fs.writeFileSync(txtFilePath, txtContent)
 
     const zip = archiver('zip', {
